@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terrestrial Ledger — Annual CO₂ Uptake by the Land, by Region</title>
+<meta name="description" content="Annual land CO2 uptake by region, 1959–2024, explained by the six terrestrial carbon processes (photosynthesis, respiration, soil storage, permafrost, fire, land-use change) and observed through the 20 GCOS terrestrial Essential Climate Variables. Source: Global Carbon Budget 2025.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="kicker">Terrestrial Ledger · A science ledger, not a live sensor</p>
+    <h1>Annual CO₂ uptake by the land, by region</h1>
+    <p class="lede">How much carbon dioxide the land takes up each year, where it goes in, and the six processes that decide it — photosynthesis, respiration, soil storage, permafrost, fire and land-use change — observed through the 20 GCOS terrestrial Essential Climate Variables.</p>
+    <p class="caption">Sources: Global Carbon Budget 2025 (Global Carbon Project) for the annual global sink; Friedlingstein et al. 2025, §3.8.2 and Figure 15 for the regional breakdown; GCOS for the variables; GTOS / TOPC for the observing framework. Latest year in this build: <strong id="latestYear">2024</strong>. See Methods &amp; sources at the bottom of the page.</p>
+    <nav class="toc" aria-label="Contents">
+      <ul>
+        <li><a href="#live-h">The active ledger</a></li>
+        <li><a href="#trend-h">Historic trend — the world land sink</a></li>
+        <li><a href="#processes-h">The six processes — the science behind the numbers</a></li>
+        <li><a href="#table-h">Every region</a></li>
+        <li><a href="#compare-h">Compare regions</a></li>
+        <li><a href="#detail-h">Region detail</a></li>
+        <li><a href="#accum-h">Accumulated carbon</a></li>
+        <li><a href="#ecv-h">The variables that watch it — GCOS terrestrial Essential Climate Variables</a></li>
+        <li><a href="#methods-h">Methods, model assumptions &amp; sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- Live ledger -->
+  <section aria-labelledby="live-h">
+    <h2 id="live-h">The active ledger</h2>
+    <p class="caption">Live counter — an estimate, not a measurement. It spreads the latest annual land rate evenly across the year. Source: Global Carbon Budget 2025, land sink 2024: 1.94 GtC/yr (7.12 GtCO₂/yr).</p>
+    <div class="cards">
+      <div class="card big">
+        <div class="label">Taken up since you opened this page</div>
+        <div class="num" id="sinceOpened">0 t</div>
+        <div class="sub" id="rateLine">— tonnes of CO₂ per second</div>
+      </div>
+      <div class="card big">
+        <div class="label">Cumulative land uptake since 1959 — live estimate</div>
+        <div class="num" id="cumulativeLive">—</div>
+        <div class="sub" id="cumulativeSub">118.1 GtC at the end of 2024, plus the 2026 estimate to date</div>
+      </div>
+      <div class="card">
+        <div class="label">World land sink, 2024</div>
+        <div class="num" id="world2024">1.94 GtC</div>
+        <div class="sub" id="worldYoY">−3.7% vs 2023 · 7.12 GtCO₂</div>
+      </div>
+      <div class="card">
+        <div class="label">Share of 2024 human emissions</div>
+        <div class="num">16.5%</div>
+        <div class="sub">1.94 GtC taken up of 11.79 GtC emitted (fossil + land-use change)</div>
+      </div>
+    </div>
+    <p class="note"><strong>2025, preliminary:</strong> the low-latency global carbon budget puts the 2025 <em>net</em> land sink at 2.36 ± 0.16 GtC/yr (Ciais et al. 2026) — a strong recovery after the 2023–24 El Niño, with tropical lands shifting from net sources in 2024 back to net sinks. Note the quantity: that is the net land flux, sink minus land-use emissions, not the SLAND series plotted below, so it is quoted in the text only. The chart and table below use the published GCB series through 2024.</p>
+  </section>
+
+  <!-- World trend -->
+  <section aria-labelledby="trend-h">
+    <h2 id="trend-h">Historic trend — the world land sink</h2>
+    <p class="caption">Annual land CO₂ uptake (SLAND, green) and land-use-change emissions (ELUC, orange dashed), world total, 1959–2024 (GtC per year). The sink has grown from under 1 GtC/yr in the 1960s to 2.4 GtC/yr in 2015–2024, but it swings by ±1 GtC from year to year with drought and El Niño — the 1983 El Niño year managed only 0.21 GtC, the wet year 2011 reached 3.29 GtC. Source: Global Carbon Budget 2025.</p>
+    <div class="chart-box"><svg id="worldChart" viewBox="0 0 900 320" role="img" aria-label="World annual land CO2 uptake and land-use-change emissions chart, 1959 to 2024"></svg>
+    <p class="legend"><span class="sw world"></span>Land sink (SLAND)<span class="sw eluc"></span>Land-use-change emissions (ELUC)</p></div>
+    <div class="stats" id="worldStats"></div>
+  </section>
+
+  <!-- Six processes -->
+  <section aria-labelledby="processes-h">
+    <h2 id="processes-h">The six processes — the science behind the numbers</h2>
+    <p class="caption">Every tonne in the table below got into the land through photosynthesis, and whether it stays there is decided by the other five. Gt = 1 Pg.</p>
+    <div class="pump-grid" id="pumpGrid"></div>
+    <p class="note"><strong>What the numbers can and cannot say:</strong> no published source splits any region's net flux into process shares, so this page does not invent one. Each region's drivers are attributed qualitatively — which processes dominate there, and why — with the source cited. The hard numbers are the global ones: GPP 123 ± 8 PgC/yr, soil respiration 98 ± 12 PgC/yr, ~1,500 GtC of soil carbon in the top metre, ~1,300 PgC in permafrost-region soils.</p>
+    <h3>Why 2024 was a weak year for the land</h3>
+    <p>The year 2024 saw the largest atmospheric CO₂ growth rate on record, largely because the tropical land sink collapsed — the same pattern as the 2015–16 El Niño. The atmospheric inversions put the 2024 tropical land flux at a source of 1.2 ± 0.9 GtC/yr, against a 0.2 ± 0.7 GtC/yr sink in the DGVMs (Friedlingstein et al. 2025, §3.8.2). The two methods disagree on the size of the tropical collapse, but not on its cause: heat and drought cut photosynthesis and raised respiration and fire across the tropics, while the northern land sink held up better. The low-latency budget for 2025 shows the rebound — about 80% of the area where the sink had weakened showed some recovery, with tropical recovery exceeding 100% and the northern extratropics still incomplete (Ciais et al. 2026).</p>
+  </section>
+
+  <!-- Region table -->
+  <section aria-labelledby="table-h">
+    <h2 id="table-h">Every region</h2>
+    <p class="caption">Decadal-mean (2015–2024) net land CO₂ flux by RECCAP-2 region, from Friedlingstein et al. 2025, Figure 15 and §3.8.2. These are decadal means — there is no published annual regional land series. Net flux = natural land sink (SLAND) minus land-use-change emissions (ELUC); positive is a sink, negative is a source. Click a row for that region's detail.</p>
+    <div class="controls">
+      <label>Sort by
+        <select id="sort">
+          <option value="net">Net flux, DGVM (largest sink first)</option>
+          <option value="name">Region name (A–Z)</option>
+          <option value="sland">Natural land sink (largest first)</option>
+          <option value="eluc">Land-use emissions (largest first)</option>
+        </select>
+      </label>
+      <button id="csvRegions" type="button">Download region table (CSV)</button>
+      <button id="csvGlobal" type="button">Download global series (CSV)</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Region</th><th>Net flux, DGVM (GtC/yr)</th><th>Net flux, inversions (GtC/yr)</th><th>Natural sink SLAND (GtC/yr)</th><th>Land-use emissions ELUC (GtC/yr)</th><th>Dominant processes</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <p class="caption"><strong>How to read the columns.</strong> Net flux, DGVM: the land's net uptake as simulated by the dynamic global vegetation models — natural sink minus land-use emissions. Net flux, inversions: the same quantity as seen from atmospheric CO₂ measurements — the independent check, and the two often disagree, which is itself information. Natural sink (SLAND): what the land would take up without land-use change. Land-use emissions (ELUC): what clearing forest and draining peat emits, from the bookkeeping models. Dominant processes: which of the six processes do most of the work there (see the processes section above).</p>
+    <p class="note"><strong>Reconciliation:</strong> the ten regional DGVM net fluxes sum to 1.30 GtC/yr, against the global 2015–2024 mean net land flux (SLAND minus bookkeeping ELUC) of 0.99 GtC/yr. The gap is the DGVM underestimate of ELUC: in South America the bookkeeping models put ELUC at ~0.5 GtC/yr against ~0.3 in the DGVMs, and in Southeast Asia ~0.4 against ~0.2 (Friedlingstein et al. 2025, §3.8.2). Regional shares are therefore not computed against a single total on this page.</p>
+  </section>
+
+  <!-- Compare -->
+  <section aria-labelledby="compare-h">
+    <h2 id="compare-h">Compare regions</h2>
+    <p class="caption">Pick up to three regions to set side by side — same figures, same drivers, same observing variables. Source: Friedlingstein et al. 2025, Figure 15 and §3.8.2.</p>
+    <div class="controls">
+      <label>Region 1 <select id="cmp1"></select></label>
+      <label>Region 2 <select id="cmp2"></select></label>
+      <label>Region 3 <select id="cmp3"></select></label>
+    </div>
+    <div class="compare-grid" id="compareGrid"></div>
+  </section>
+
+  <!-- Region detail -->
+  <section aria-labelledby="detail-h">
+    <h2 id="detail-h">Region detail</h2>
+    <p class="caption">Pick a region in the table above to see why it takes up what it does, the processes behind it, and the GCOS variables that observe it. Source: Friedlingstein et al. 2025, §3.8.2 and Figure 15; GCOS.</p>
+    <div id="detail"><p class="note">No region selected yet — click any row in the table, or use the button below for South America.</p><button id="pickSouthAmerica" type="button">Show South America</button></div>
+  </section>
+
+  <!-- Accumulated carbon -->
+  <section aria-labelledby="accum-h">
+    <h2 id="accum-h">Accumulated carbon</h2>
+    <p class="caption">Cumulative totals are sums of the annual GCB series. Sources: Global Carbon Budget 2025; conversion 1 GtC = 3.664 GtCO₂.</p>
+    <div class="cards">
+      <div class="card"><div class="label">Cumulative land uptake, 1959–2024</div><div class="num">118 GtC</div><div class="sub">433 GtCO₂. 22.0% of the 537 GtC humans emitted over the same period.</div></div>
+      <div class="card"><div class="label">Cumulative human emissions, 1959–2024</div><div class="num">537 GtC</div><div class="sub">Fossil fuels + land-use change, 1959–2024 (Global Carbon Budget 2025).</div></div>
+      <div class="card"><div class="label">Where the rest went</div><div class="num">≈ 43% air</div><div class="sub">43.1% stayed in the atmosphere and 27.2% went into the ocean over 1959–2024; the land took 22.0%. The remaining ~8% is the budget imbalance — emissions the three sinks do not account for.</div></div>
+      <div class="card"><div class="label">Observed CO₂ in the air</div><div class="num">≈ 426 ppm</div><div class="sub">Atmospheric CO₂ averaged 422.8 ppm in 2024 and about 425.6 ppm in 2025, up from ~278 ppm pre-industrial (Global Carbon Budget 2025).</div></div>
+    </div>
+    <p class="note"><strong>Over the longer run the land was a source, not a sink.</strong> From 1850 to 2024, cumulative land-use emissions (250 ± 65 GtC) exceeded the cumulative natural land sink (175 ± 50 GtC), making the global land a net source of 75 ± 80 GtC over the whole period (Friedlingstein et al. 2025, §3.9.1). The land only became a net sink in recent decades, as fossil-driven CO₂ fertilisation and regrowth began to outweigh clearing.</p>
+  </section>
+
+  <!-- ECVs -->
+  <section aria-labelledby="ecv-h">
+    <h2 id="ecv-h">The variables that watch it — GCOS terrestrial Essential Climate Variables</h2>
+    <p class="caption">The land sink is not measured by one instrument. It is constrained by this set of 20 terrestrial Essential Climate Variables (ECVs) — the minimum set needed to assess the land's state and change, coordinated by the Global Climate Observing System (GCOS). The observing framework is GTOS, the Global Terrestrial Observing System: its Terrestrial Observation Panel for Climate (TOPC) is sponsored jointly by GCOS, the FAO-led GTOS and the World Climate Research Programme (WCRP). Source: GCOS ECV list, gcos.wmo.int (accessed 2026-11-26); groups are GCOS's own.</p>
+    <div class="table-wrap">
+      <table class="eov">
+        <thead><tr><th>Variable</th><th>GCOS group</th><th>Role in the ledger</th></tr></thead>
+        <tbody id="eovBody"></tbody>
+      </table>
+    </div>
+    <p class="caption"><strong>How to read the table.</strong> Hydrology and cryosphere variables set the water and the cold that the sink depends on; biology variables are the sink itself, watched from space and the ground; the two human-use variables are the pressure on it. <strong>Note:</strong> unlike the ocean ECVs, the terrestrial list has no pilot tier — all 20 are established ECVs. The current list adds terrestrial water storage, land surface temperature, evaporation from land and anthropogenic greenhouse gas emissions to the older 16-variable terrestrial list, and renames water use as anthropogenic water use.</p>
+    <h3>Which variables constrain the uptake?</h3>
+    <p>The sink is pinned down first by <strong>FAPAR</strong> and <strong>leaf area index</strong> (how much light the canopy catches), <strong>land cover</strong> and <strong>above-ground biomass</strong> (what grows where, and how much carbon it holds), <strong>soil moisture</strong> and <strong>terrestrial water storage</strong> (the water that decides whether photosynthesis runs — land-flux anomalies track GRACE water storage), <strong>soil carbon</strong> (the stock itself), <strong>fire</strong> (the disturbance that returns carbon to the air), <strong>land surface temperature</strong> (heat stress), and <strong>permafrost</strong> and <strong>snow</strong> (the frozen store and its insulation). Each region's detail panel lists the ECVs that watch that region.</p>
+  </section>
+
+  <!-- Methods -->
+  <section aria-labelledby="methods-h">
+    <h2 id="methods-h">Methods, model assumptions &amp; sources</h2>
+    <div class="methods">
+      <h3>What is counted</h3>
+      <p>The headline global figure is the Global Carbon Budget land sink (SLAND): the net uptake of CO₂ by the land caused by rising atmospheric CO₂ and climate, in GtC per year. It is the average of 22 dynamic global vegetation models (S2 simulation), adjusted for land-cover bias (the "replaced sinks and sources" adjustment, a 19% reduction) and, for 2015–2024, a −0.07 GtC/yr adjustment for land-to-ocean fluxes the DGVMs do not simulate. Uncertainty is ±0.5 GtC/yr on average, and ±1.1 GtC/yr in 2024. The regional figures are the decadal-mean (2015–2024) RECCAP-2 region fluxes from the same paper's Figure 15 and §3.8.2.</p>
+      <h3>What is not in the headline figure</h3>
+      <p>SLAND excludes land-use-change emissions — they are shown separately as ELUC (1.25 GtC/yr in 2024) and subtracted to give the net land flux. The regional table does not include an annual series: no published annual regional land series exists, so the table is decadal means. The 2025 preliminary figure is a net land flux from a different, low-latency framework (3 DGVMs + OCO-2 inversions), not a GCB SLAND value, and is not added to the cumulative counter for that reason.</p>
+      <h3>Model &amp; estimate assumptions</h3>
+      <ul>
+        <li><strong>Live counter:</strong> the 2024 land rate (7.12 GtCO₂/year) is spread evenly across the year — about 226 tonnes of CO₂ per second — and applied to 2026 until a newer annual total is published. It is an accounting spread, not a real-time measurement; real uptake varies by season, drought and El Niño, and in some years the land is a net source.</li>
+        <li><strong>Cumulative live total:</strong> cumulative land uptake at the end of 2024 (118.1 GtC) plus the 2026 estimate from 1 January to now, at the same even rate. The preliminary 2025 net land flux is not added, because it is a net flux (sink minus land-use emissions), not SLAND.</li>
+        <li><strong>Regional fluxes:</strong> decadal means for 2015–2024 from GCB 2025 Figure 15. Values stated in the paper text are used verbatim; values not stated in the text are read from the figure to the nearest 0.05 GtC/yr and flagged in data.json (value_source "fig"). DGVM and inversion net fluxes are independent estimates of the same quantity and often disagree — the disagreement is shown, not averaged away.</li>
+        <li><strong>Process attribution:</strong> qualitative only. No published source splits a region's net flux into process shares; the page attributes dominant processes per region from the cited driver descriptions and says so where a split is not available.</li>
+        <li><strong>Rounding:</strong> figures are shown to two decimals (GtC) or one decimal (GtC/yr) as shown; underlying values are in data.json.</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li>Global Carbon Project, Global Carbon Budget 2025 (Friedlingstein et al. 2025, Earth Syst. Sci. Data 18, 3211–3288) — <a href="https://doi.org/10.5194/essd-18-3211-2026">doi.org/10.5194/essd-18-3211-2026</a>; data — <a href="https://doi.org/10.18160/GCP-2025">doi.org/10.18160/GCP-2025</a>; spreadsheet via the ICOS Carbon Portal — <a href="https://www.icos-cp.eu/GCP/2025">icos-cp.eu/GCP/2025</a></li>
+        <li>Regional breakdown: Friedlingstein et al. 2025, §3.8.2 and Figure 15 (RECCAP-2 regions, 2015–2024) — same DOI as above; RECCAP-2 framework: Ciais et al. 2022, Geosci. Model Dev. 15, 1289–1316 — <a href="https://doi.org/10.5194/gmd-15-1289-2022">doi.org/10.5194/gmd-15-1289-2022</a></li>
+        <li>GCOS Essential Climate Variables, terrestrial domain (20 ECVs) — <a href="https://gcos.wmo.int/en/essential-climate-variables">gcos.wmo.int/en/essential-climate-variables</a> (accessed 2026-11-26)</li>
+        <li>GTOS / TOPC: Terrestrial Observation Panel for Climate, sponsored jointly by GCOS, the FAO-led GTOS and WCRP — GCOS submission to UNFCCC SBSTA 37 (2012) — <a href="https://unfccc.int/sites/default/files/resource/docs/2012/sbsta/eng/misc15.pdf">unfccc.int (misc15.pdf)</a></li>
+        <li>Ciais et al. 2026, "Low latency global carbon budget reveals strong land sink recovery in 2025" — <a href="https://arxiv.org/abs/2609.34226">arxiv.org/abs/2609.34226</a> (2025 preliminary net land sink 2.36 ± 0.16 GtC/yr)</li>
+        <li>Beer et al. 2010, Science 329, 834–838 — terrestrial GPP 123 ± 8 PgC/yr — <a href="https://doi.org/10.1126/science.1184984">doi.org/10.1126/science.1184984</a></li>
+        <li>Bond-Lamberty &amp; Thomson 2010, Nature 464, 579–582 — soil respiration 98 ± 12 PgC/yr in 2008, Q10 ≈ 1.5 — <a href="https://doi.org/10.1038/nature08930">doi.org/10.1038/nature08930</a></li>
+        <li>Batjes 1996, Eur. J. Soil Sci. 47, 151–163 — soil organic carbon 1,462–1,548 PgC in the top 1 m; Jobbágy &amp; Jackson 2000 — 1,502 PgC</li>
+        <li>Hugelius et al. 2014, Biogeosciences 11, 6573–6593 — permafrost-region SOC ~1,300 PgC, 1,035 ± 150 PgC in 0–3 m soils — <a href="https://doi.org/10.5194/bg-11-6573-2014">doi.org/10.5194/bg-11-6573-2014</a></li>
+        <li>van der Werf et al. 2017 — Global Fire Emissions Database v4.1s (GFED4.1s), ~2 GtC/yr</li>
+        <li>Houghton 2007 (via Ciais et al. 2013) — vegetation carbon ~550 GtC</li>
+      </ul>
+      <p class="caption">Data file: <code>data.json</code> in this folder, built by <code>scripts/fetch_data.py</code> from the Global Carbon Budget 2025 spreadsheet and Friedlingstein et al. 2025, Figure 15 and §3.8.2. Re-run that script to refresh the data when a new Global Carbon Budget is published.</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><p>Terrestrial Ledger · Built from public data, with sources credited in every caption. This page estimates; it does not measure uptake in real time.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
