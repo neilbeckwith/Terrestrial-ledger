@@ -1,0 +1,1121 @@
+{
+ "meta": {
+  "title": "Terrestrial Ledger \u2014 annual land CO2 uptake by region",
+  "latest_year": 2024,
+  "first_year": 1959,
+  "units": "GtC/yr (1 GtC = 1 PgC = 3.664 GtCO2)",
+  "sources": {
+   "gcb": "Friedlingstein et al. 2025, Global Carbon Budget 2025, Earth Syst. Sci. Data 18, 3211-3288, doi:10.5194/essd-18-3211-2026; data doi:10.18160/GCP-2025 (spreadsheet via ICOS Carbon Portal)",
+   "regions": "Friedlingstein et al. 2025, Sect. 3.8.2 and Figure 15: decadal-mean (2015-2024) land fluxes for the 10 RECCAP-2 land regions",
+   "gcos": "GCOS Essential Climate Variables, terrestrial domain (20 ECVs), gcos.wmo.int/en/essential-climate-variables (accessed 2026-11-26); framework GTOS/TOPC, sponsored jointly by GCOS, the FAO-led GTOS and WCRP",
+   "processes": "Beer et al. 2010; Bond-Lamberty & Thomson 2010; Batjes 1996; Jobbagy & Jackson 2000; Hugelius et al. 2014; van der Werf et al. 2017 (GFED4.1s)"
+  },
+  "notes": [
+   "GCB land sink (SLAND) is the natural land uptake: the average of 22 dynamic global vegetation models (S2 simulation), RSS-adjusted for land-cover bias, uncertainty +-0.5 GtC/yr on average (wider in single years; +-1.1 GtC/yr in 2024).",
+   "Regional fluxes are DECADAL MEANS (2015-2024) from GCB 2025 Fig. 15 / Sect. 3.8.2, not an annual series. No published annual regional land series exists. Values stated in the paper text are exact; the rest are read from Figure 15 to the nearest 0.05 GtC/yr (value_source 'fig'). Net flux = SLAND - ELUC; positive = sink.",
+   "Regional DGVM nets sum to more than the global net land flux (SLAND minus bookkeeping ELUC) because DGVMs underestimate ELUC in South America and Southeast Asia (GCB 2025 Sect. 3.8.2). The page states the reconciliation.",
+   "Sign convention on this page: uptake is positive (carbon into the land); ELUC is shown as a positive emission (carbon out of the land)."
+  ]
+ },
+ "world": [
+  {
+   "year": 1959,
+   "sland_gtc": 0.453,
+   "sland_gtco2": 1.66,
+   "efos_gtc": 2.417,
+   "eluc_gtc": 2.372,
+   "gatm_gtc": 2.039,
+   "socean_gtc": 1.115,
+   "net_land_gtc": -1.919
+  },
+  {
+   "year": 1960,
+   "sland_gtc": 0.734,
+   "sland_gtco2": 2.69,
+   "efos_gtc": 2.562,
+   "eluc_gtc": 2.077,
+   "gatm_gtc": 1.508,
+   "socean_gtc": 1.084,
+   "net_land_gtc": -1.344
+  },
+  {
+   "year": 1961,
+   "sland_gtc": 0.682,
+   "sland_gtco2": 2.5,
+   "efos_gtc": 2.57,
+   "eluc_gtc": 2.082,
+   "gatm_gtc": 1.657,
+   "socean_gtc": 1.025,
+   "net_land_gtc": -1.4
+  },
+  {
+   "year": 1962,
+   "sland_gtc": 1.133,
+   "sland_gtco2": 4.15,
+   "efos_gtc": 2.66,
+   "eluc_gtc": 1.948,
+   "gatm_gtc": 1.189,
+   "socean_gtc": 1.069,
+   "net_land_gtc": -0.815
+  },
+  {
+   "year": 1963,
+   "sland_gtc": 0.773,
+   "sland_gtco2": 2.83,
+   "efos_gtc": 2.802,
+   "eluc_gtc": 1.898,
+   "gatm_gtc": 1.211,
+   "socean_gtc": 1.267,
+   "net_land_gtc": -1.125
+  },
+  {
+   "year": 1964,
+   "sland_gtc": 0.986,
+   "sland_gtco2": 3.61,
+   "efos_gtc": 2.954,
+   "eluc_gtc": 1.818,
+   "gatm_gtc": 1.041,
+   "socean_gtc": 1.366,
+   "net_land_gtc": -0.832
+  },
+  {
+   "year": 1965,
+   "sland_gtc": 0.35,
+   "sland_gtco2": 1.28,
+   "efos_gtc": 3.087,
+   "eluc_gtc": 1.743,
+   "gatm_gtc": 2.336,
+   "socean_gtc": 1.456,
+   "net_land_gtc": -1.393
+  },
+  {
+   "year": 1966,
+   "sland_gtc": 1.13,
+   "sland_gtco2": 4.14,
+   "efos_gtc": 3.238,
+   "eluc_gtc": 1.615,
+   "gatm_gtc": 2.336,
+   "socean_gtc": 1.376,
+   "net_land_gtc": -0.485
+  },
+  {
+   "year": 1967,
+   "sland_gtc": 1.336,
+   "sland_gtco2": 4.89,
+   "efos_gtc": 3.34,
+   "eluc_gtc": 1.706,
+   "gatm_gtc": 1.296,
+   "socean_gtc": 1.221,
+   "net_land_gtc": -0.37
+  },
+  {
+   "year": 1968,
+   "sland_gtc": 1.602,
+   "sland_gtco2": 5.87,
+   "efos_gtc": 3.522,
+   "eluc_gtc": 1.727,
+   "gatm_gtc": 2.103,
+   "socean_gtc": 1.358,
+   "net_land_gtc": -0.125
+  },
+  {
+   "year": 1969,
+   "sland_gtc": 0.587,
+   "sland_gtco2": 2.15,
+   "efos_gtc": 3.756,
+   "eluc_gtc": 1.894,
+   "gatm_gtc": 2.804,
+   "socean_gtc": 1.47,
+   "net_land_gtc": -1.307
+  },
+  {
+   "year": 1970,
+   "sland_gtc": 0.731,
+   "sland_gtco2": 2.68,
+   "efos_gtc": 4.066,
+   "eluc_gtc": 1.826,
+   "gatm_gtc": 2.4,
+   "socean_gtc": 1.347,
+   "net_land_gtc": -1.095
+  },
+  {
+   "year": 1971,
+   "sland_gtc": 1.652,
+   "sland_gtco2": 6.05,
+   "efos_gtc": 4.231,
+   "eluc_gtc": 1.676,
+   "gatm_gtc": 1.551,
+   "socean_gtc": 1.436,
+   "net_land_gtc": -0.024
+  },
+  {
+   "year": 1972,
+   "sland_gtc": 0.808,
+   "sland_gtco2": 2.96,
+   "efos_gtc": 4.428,
+   "eluc_gtc": 1.757,
+   "gatm_gtc": 3.122,
+   "socean_gtc": 1.643,
+   "net_land_gtc": -0.949
+  },
+  {
+   "year": 1973,
+   "sland_gtc": 1.144,
+   "sland_gtco2": 4.19,
+   "efos_gtc": 4.661,
+   "eluc_gtc": 1.707,
+   "gatm_gtc": 3.101,
+   "socean_gtc": 1.593,
+   "net_land_gtc": -0.563
+  },
+  {
+   "year": 1974,
+   "sland_gtc": 2.945,
+   "sland_gtco2": 10.79,
+   "efos_gtc": 4.639,
+   "eluc_gtc": 1.723,
+   "gatm_gtc": 1.444,
+   "socean_gtc": 1.535,
+   "net_land_gtc": 1.222
+  },
+  {
+   "year": 1975,
+   "sland_gtc": 2.095,
+   "sland_gtco2": 7.67,
+   "efos_gtc": 4.637,
+   "eluc_gtc": 1.671,
+   "gatm_gtc": 2.613,
+   "socean_gtc": 1.523,
+   "net_land_gtc": 0.423
+  },
+  {
+   "year": 1976,
+   "sland_gtc": 2.166,
+   "sland_gtco2": 7.94,
+   "efos_gtc": 4.875,
+   "eluc_gtc": 1.654,
+   "gatm_gtc": 2.06,
+   "socean_gtc": 1.642,
+   "net_land_gtc": 0.512
+  },
+  {
+   "year": 1977,
+   "sland_gtc": 1.145,
+   "sland_gtco2": 4.19,
+   "efos_gtc": 5.01,
+   "eluc_gtc": 1.807,
+   "gatm_gtc": 4.078,
+   "socean_gtc": 1.711,
+   "net_land_gtc": -0.662
+  },
+  {
+   "year": 1978,
+   "sland_gtc": 2.112,
+   "sland_gtco2": 7.74,
+   "efos_gtc": 5.192,
+   "eluc_gtc": 1.791,
+   "gatm_gtc": 2.74,
+   "socean_gtc": 1.704,
+   "net_land_gtc": 0.321
+  },
+  {
+   "year": 1979,
+   "sland_gtc": 1.084,
+   "sland_gtco2": 3.97,
+   "efos_gtc": 5.324,
+   "eluc_gtc": 1.598,
+   "gatm_gtc": 4.545,
+   "socean_gtc": 1.656,
+   "net_land_gtc": -0.515
+  },
+  {
+   "year": 1980,
+   "sland_gtc": 0.248,
+   "sland_gtco2": 0.91,
+   "efos_gtc": 5.297,
+   "eluc_gtc": 1.638,
+   "gatm_gtc": 3.568,
+   "socean_gtc": 2.012,
+   "net_land_gtc": -1.39
+  },
+  {
+   "year": 1981,
+   "sland_gtc": 1.614,
+   "sland_gtco2": 5.92,
+   "efos_gtc": 5.153,
+   "eluc_gtc": 1.593,
+   "gatm_gtc": 2.443,
+   "socean_gtc": 1.94,
+   "net_land_gtc": 0.022
+  },
+  {
+   "year": 1982,
+   "sland_gtc": 1.327,
+   "sland_gtco2": 4.86,
+   "efos_gtc": 5.112,
+   "eluc_gtc": 1.51,
+   "gatm_gtc": 2.103,
+   "socean_gtc": 2.027,
+   "net_land_gtc": -0.182
+  },
+  {
+   "year": 1983,
+   "sland_gtc": 0.208,
+   "sland_gtco2": 0.76,
+   "efos_gtc": 5.159,
+   "eluc_gtc": 1.594,
+   "gatm_gtc": 3.908,
+   "socean_gtc": 2.214,
+   "net_land_gtc": -1.386
+  },
+  {
+   "year": 1984,
+   "sland_gtc": 1.883,
+   "sland_gtco2": 6.9,
+   "efos_gtc": 5.31,
+   "eluc_gtc": 1.753,
+   "gatm_gtc": 2.613,
+   "socean_gtc": 2.083,
+   "net_land_gtc": 0.13
+  },
+  {
+   "year": 1985,
+   "sland_gtc": 2.04,
+   "sland_gtco2": 7.48,
+   "efos_gtc": 5.498,
+   "eluc_gtc": 1.853,
+   "gatm_gtc": 3.505,
+   "socean_gtc": 2.028,
+   "net_land_gtc": 0.188
+  },
+  {
+   "year": 1986,
+   "sland_gtc": 1.953,
+   "sland_gtco2": 7.16,
+   "efos_gtc": 5.578,
+   "eluc_gtc": 1.895,
+   "gatm_gtc": 2.166,
+   "socean_gtc": 2.046,
+   "net_land_gtc": 0.058
+  },
+  {
+   "year": 1987,
+   "sland_gtc": 0.609,
+   "sland_gtco2": 2.23,
+   "efos_gtc": 5.76,
+   "eluc_gtc": 1.773,
+   "gatm_gtc": 5.629,
+   "socean_gtc": 2.11,
+   "net_land_gtc": -1.164
+  },
+  {
+   "year": 1988,
+   "sland_gtc": 1.36,
+   "sland_gtco2": 4.98,
+   "efos_gtc": 5.982,
+   "eluc_gtc": 1.68,
+   "gatm_gtc": 4.609,
+   "socean_gtc": 2.071,
+   "net_land_gtc": -0.32
+  },
+  {
+   "year": 1989,
+   "sland_gtc": 2.686,
+   "sland_gtco2": 9.84,
+   "efos_gtc": 6.059,
+   "eluc_gtc": 1.632,
+   "gatm_gtc": 3.101,
+   "socean_gtc": 2.116,
+   "net_land_gtc": 1.054
+  },
+  {
+   "year": 1990,
+   "sland_gtc": 1.848,
+   "sland_gtco2": 6.77,
+   "efos_gtc": 6.204,
+   "eluc_gtc": 1.591,
+   "gatm_gtc": 2.591,
+   "socean_gtc": 2.203,
+   "net_land_gtc": 0.257
+  },
+  {
+   "year": 1991,
+   "sland_gtc": 1.762,
+   "sland_gtco2": 6.46,
+   "efos_gtc": 6.333,
+   "eluc_gtc": 1.561,
+   "gatm_gtc": 1.593,
+   "socean_gtc": 2.356,
+   "net_land_gtc": 0.201
+  },
+  {
+   "year": 1992,
+   "sland_gtc": 1.683,
+   "sland_gtco2": 6.17,
+   "efos_gtc": 6.146,
+   "eluc_gtc": 1.629,
+   "gatm_gtc": 1.529,
+   "socean_gtc": 2.496,
+   "net_land_gtc": 0.054
+  },
+  {
+   "year": 1993,
+   "sland_gtc": 2.234,
+   "sland_gtco2": 8.19,
+   "efos_gtc": 6.209,
+   "eluc_gtc": 1.565,
+   "gatm_gtc": 2.613,
+   "socean_gtc": 2.447,
+   "net_land_gtc": 0.67
+  },
+  {
+   "year": 1994,
+   "sland_gtc": 1.244,
+   "sland_gtco2": 4.56,
+   "efos_gtc": 6.27,
+   "eluc_gtc": 1.82,
+   "gatm_gtc": 3.526,
+   "socean_gtc": 2.295,
+   "net_land_gtc": -0.576
+  },
+  {
+   "year": 1995,
+   "sland_gtc": 1.497,
+   "sland_gtco2": 5.49,
+   "efos_gtc": 6.418,
+   "eluc_gtc": 1.713,
+   "gatm_gtc": 4.248,
+   "socean_gtc": 2.283,
+   "net_land_gtc": -0.216
+  },
+  {
+   "year": 1996,
+   "sland_gtc": 2.502,
+   "sland_gtco2": 9.17,
+   "efos_gtc": 6.614,
+   "eluc_gtc": 1.785,
+   "gatm_gtc": 2.23,
+   "socean_gtc": 2.273,
+   "net_land_gtc": 0.717
+  },
+  {
+   "year": 1997,
+   "sland_gtc": 2.546,
+   "sland_gtco2": 9.33,
+   "efos_gtc": 6.654,
+   "eluc_gtc": 2.189,
+   "gatm_gtc": 4.184,
+   "socean_gtc": 2.382,
+   "net_land_gtc": 0.358
+  },
+  {
+   "year": 1998,
+   "sland_gtc": 1.386,
+   "sland_gtco2": 5.08,
+   "efos_gtc": 6.631,
+   "eluc_gtc": 1.854,
+   "gatm_gtc": 6.032,
+   "socean_gtc": 2.442,
+   "net_land_gtc": -0.468
+  },
+  {
+   "year": 1999,
+   "sland_gtc": 2.84,
+   "sland_gtco2": 10.41,
+   "efos_gtc": 6.779,
+   "eluc_gtc": 1.791,
+   "gatm_gtc": 2.846,
+   "socean_gtc": 2.234,
+   "net_land_gtc": 1.049
+  },
+  {
+   "year": 2000,
+   "sland_gtc": 2.72,
+   "sland_gtco2": 9.97,
+   "efos_gtc": 6.963,
+   "eluc_gtc": 1.677,
+   "gatm_gtc": 2.655,
+   "socean_gtc": 2.191,
+   "net_land_gtc": 1.043
+  },
+  {
+   "year": 2001,
+   "sland_gtc": 2.015,
+   "sland_gtco2": 7.38,
+   "efos_gtc": 7.012,
+   "eluc_gtc": 1.49,
+   "gatm_gtc": 3.929,
+   "socean_gtc": 2.102,
+   "net_land_gtc": 0.525
+  },
+  {
+   "year": 2002,
+   "sland_gtc": 1.083,
+   "sland_gtco2": 3.97,
+   "efos_gtc": 7.168,
+   "eluc_gtc": 1.663,
+   "gatm_gtc": 5.013,
+   "socean_gtc": 2.49,
+   "net_land_gtc": -0.58
+  },
+  {
+   "year": 2003,
+   "sland_gtc": 1.988,
+   "sland_gtco2": 7.28,
+   "efos_gtc": 7.547,
+   "eluc_gtc": 1.998,
+   "gatm_gtc": 4.864,
+   "socean_gtc": 2.592,
+   "net_land_gtc": -0.01
+  },
+  {
+   "year": 2004,
+   "sland_gtc": 2.517,
+   "sland_gtco2": 9.22,
+   "efos_gtc": 7.808,
+   "eluc_gtc": 1.759,
+   "gatm_gtc": 3.313,
+   "socean_gtc": 2.575,
+   "net_land_gtc": 0.759
+  },
+  {
+   "year": 2005,
+   "sland_gtc": 1.586,
+   "sland_gtco2": 5.81,
+   "efos_gtc": 8.078,
+   "eluc_gtc": 1.619,
+   "gatm_gtc": 5.246,
+   "socean_gtc": 2.623,
+   "net_land_gtc": -0.033
+  },
+  {
+   "year": 2006,
+   "sland_gtc": 2.538,
+   "sland_gtco2": 9.3,
+   "efos_gtc": 8.35,
+   "eluc_gtc": 1.647,
+   "gatm_gtc": 3.781,
+   "socean_gtc": 2.721,
+   "net_land_gtc": 0.891
+  },
+  {
+   "year": 2007,
+   "sland_gtc": 2.352,
+   "sland_gtco2": 8.62,
+   "efos_gtc": 8.597,
+   "eluc_gtc": 1.527,
+   "gatm_gtc": 4.524,
+   "socean_gtc": 2.696,
+   "net_land_gtc": 0.826
+  },
+  {
+   "year": 2008,
+   "sland_gtc": 2.616,
+   "sland_gtco2": 9.58,
+   "efos_gtc": 8.747,
+   "eluc_gtc": 1.624,
+   "gatm_gtc": 3.759,
+   "socean_gtc": 2.715,
+   "net_land_gtc": 0.992
+  },
+  {
+   "year": 2009,
+   "sland_gtc": 2.377,
+   "sland_gtco2": 8.71,
+   "efos_gtc": 8.601,
+   "eluc_gtc": 1.784,
+   "gatm_gtc": 3.356,
+   "socean_gtc": 2.834,
+   "net_land_gtc": 0.594
+  },
+  {
+   "year": 2010,
+   "sland_gtc": 2.677,
+   "sland_gtco2": 9.81,
+   "efos_gtc": 9.093,
+   "eluc_gtc": 1.779,
+   "gatm_gtc": 5.013,
+   "socean_gtc": 2.833,
+   "net_land_gtc": 0.898
+  },
+  {
+   "year": 2011,
+   "sland_gtc": 3.293,
+   "sland_gtco2": 12.06,
+   "efos_gtc": 9.41,
+   "eluc_gtc": 1.745,
+   "gatm_gtc": 3.696,
+   "socean_gtc": 2.867,
+   "net_land_gtc": 1.548
+  },
+  {
+   "year": 2012,
+   "sland_gtc": 1.846,
+   "sland_gtco2": 6.76,
+   "efos_gtc": 9.54,
+   "eluc_gtc": 1.824,
+   "gatm_gtc": 5.119,
+   "socean_gtc": 2.906,
+   "net_land_gtc": 0.022
+  },
+  {
+   "year": 2013,
+   "sland_gtc": 2.715,
+   "sland_gtco2": 9.95,
+   "efos_gtc": 9.628,
+   "eluc_gtc": 1.725,
+   "gatm_gtc": 5.204,
+   "socean_gtc": 2.955,
+   "net_land_gtc": 0.99
+  },
+  {
+   "year": 2014,
+   "sland_gtc": 3.039,
+   "sland_gtco2": 11.13,
+   "efos_gtc": 9.68,
+   "eluc_gtc": 1.749,
+   "gatm_gtc": 4.312,
+   "socean_gtc": 3.082,
+   "net_land_gtc": 1.289
+  },
+  {
+   "year": 2015,
+   "sland_gtc": 1.775,
+   "sland_gtco2": 6.5,
+   "efos_gtc": 9.663,
+   "eluc_gtc": 1.777,
+   "gatm_gtc": 6.266,
+   "socean_gtc": 3.168,
+   "net_land_gtc": -0.002
+  },
+  {
+   "year": 2016,
+   "sland_gtc": 1.984,
+   "sland_gtco2": 7.27,
+   "efos_gtc": 9.66,
+   "eluc_gtc": 1.467,
+   "gatm_gtc": 6.032,
+   "socean_gtc": 3.288,
+   "net_land_gtc": 0.516
+  },
+  {
+   "year": 2017,
+   "sland_gtc": 2.85,
+   "sland_gtco2": 10.44,
+   "efos_gtc": 9.818,
+   "eluc_gtc": 1.449,
+   "gatm_gtc": 4.545,
+   "socean_gtc": 3.123,
+   "net_land_gtc": 1.401
+  },
+  {
+   "year": 2018,
+   "sland_gtc": 2.878,
+   "sland_gtco2": 10.55,
+   "efos_gtc": 10.026,
+   "eluc_gtc": 1.332,
+   "gatm_gtc": 5.076,
+   "socean_gtc": 3.215,
+   "net_land_gtc": 1.546
+  },
+  {
+   "year": 2019,
+   "sland_gtc": 2.384,
+   "sland_gtco2": 8.73,
+   "efos_gtc": 10.122,
+   "eluc_gtc": 1.334,
+   "gatm_gtc": 5.31,
+   "socean_gtc": 3.242,
+   "net_land_gtc": 1.05
+  },
+  {
+   "year": 2020,
+   "sland_gtc": 2.101,
+   "sland_gtco2": 7.7,
+   "efos_gtc": 9.596,
+   "eluc_gtc": 1.233,
+   "gatm_gtc": 4.949,
+   "socean_gtc": 3.243,
+   "net_land_gtc": 0.868
+  },
+  {
+   "year": 2021,
+   "sland_gtc": 2.596,
+   "sland_gtco2": 9.51,
+   "efos_gtc": 10.062,
+   "eluc_gtc": 1.271,
+   "gatm_gtc": 5.034,
+   "socean_gtc": 3.145,
+   "net_land_gtc": 1.325
+  },
+  {
+   "year": 2022,
+   "sland_gtc": 3.106,
+   "sland_gtco2": 11.38,
+   "efos_gtc": 10.242,
+   "eluc_gtc": 1.306,
+   "gatm_gtc": 4.864,
+   "socean_gtc": 3.12,
+   "net_land_gtc": 1.8
+  },
+  {
+   "year": 2023,
+   "sland_gtc": 2.017,
+   "sland_gtco2": 7.39,
+   "efos_gtc": 10.397,
+   "eluc_gtc": 1.295,
+   "gatm_gtc": 5.735,
+   "socean_gtc": 3.275,
+   "net_land_gtc": 0.722
+  },
+  {
+   "year": 2024,
+   "sland_gtc": 1.942,
+   "sland_gtco2": 7.12,
+   "efos_gtc": 10.535,
+   "eluc_gtc": 1.252,
+   "gatm_gtc": 7.923,
+   "socean_gtc": 3.389,
+   "net_land_gtc": 0.691
+  }
+ ],
+ "summary": {
+  "latest_year": 2024,
+  "latest_sland_gtc": 1.942,
+  "latest_sland_gtco2": 7.12,
+  "prev_sland_gtc": 2.017,
+  "yoy_pct": -3.7,
+  "latest_total_emissions_gtc": 11.79,
+  "latest_land_share_of_emissions_pct": 16.5,
+  "mean_2015_2024_gtc": 2.36,
+  "mean_2015_2024_net_land_gtc": 0.99,
+  "cumulative_1959_latest_gtc": 118.1,
+  "cumulative_1959_latest_gtco2": 433.0,
+  "cumulative_emissions_1959_latest_gtc": 537.3,
+  "cumulative_land_share_pct": 22.0,
+  "decadal_means_gtc": {
+   "1960": 0.93,
+   "1970": 1.59,
+   "1980": 1.39,
+   "1990": 1.95,
+   "2000": 2.18,
+   "2010": 2.54
+  },
+  "regions_dgvm_net_sum_gtc": 1.3,
+  "regions_inv_net_sum_gtc": 1.25,
+  "preliminary_2025_net_land_gtc": 2.36,
+  "preliminary_2025_source": "Ciais et al. 2026, low-latency global carbon budget 2025, arXiv:2609.34226 (2.36 +- 0.16 GtC/yr; preliminary, not in the GCB series). NOTE: this is the NET land flux (sink minus land-use emissions), a different quantity from the SLAND series plotted here."
+ },
+ "regions": {
+  "North America": {
+   "sland_gtc": 0.4,
+   "eluc_bkm_gtc": 0.0,
+   "net_dgvm_gtc": 0.4,
+   "net_inv_gtc": 0.4,
+   "value_source": "text"
+  },
+  "South America": {
+   "sland_gtc": 0.4,
+   "eluc_bkm_gtc": 0.5,
+   "net_dgvm_gtc": 0.1,
+   "net_inv_gtc": -0.1,
+   "value_source": "text"
+  },
+  "Europe": {
+   "sland_gtc": 0.1,
+   "eluc_bkm_gtc": 0.0,
+   "net_dgvm_gtc": 0.1,
+   "net_inv_gtc": 0.3,
+   "value_source": "fig"
+  },
+  "Africa": {
+   "sland_gtc": 0.5,
+   "eluc_bkm_gtc": 0.4,
+   "net_dgvm_gtc": 0.1,
+   "net_inv_gtc": -0.3,
+   "value_source": "text"
+  },
+  "Russia": {
+   "sland_gtc": 0.35,
+   "eluc_bkm_gtc": 0.0,
+   "net_dgvm_gtc": 0.3,
+   "net_inv_gtc": 0.6,
+   "value_source": "fig"
+  },
+  "West Asia": {
+   "sland_gtc": 0.05,
+   "eluc_bkm_gtc": 0.0,
+   "net_dgvm_gtc": 0.05,
+   "net_inv_gtc": 0.0,
+   "value_source": "fig"
+  },
+  "Southeast Asia": {
+   "sland_gtc": 0.2,
+   "eluc_bkm_gtc": 0.4,
+   "net_dgvm_gtc": 0.0,
+   "net_inv_gtc": -0.1,
+   "value_source": "text"
+  },
+  "East Asia": {
+   "sland_gtc": 0.2,
+   "eluc_bkm_gtc": 0.0,
+   "net_dgvm_gtc": 0.2,
+   "net_inv_gtc": 0.2,
+   "value_source": "fig"
+  },
+  "South Asia": {
+   "sland_gtc": 0.1,
+   "eluc_bkm_gtc": 0.1,
+   "net_dgvm_gtc": 0.0,
+   "net_inv_gtc": 0.2,
+   "value_source": "fig"
+  },
+  "Australasia": {
+   "sland_gtc": 0.05,
+   "eluc_bkm_gtc": 0.0,
+   "net_dgvm_gtc": 0.05,
+   "net_inv_gtc": 0.05,
+   "value_source": "fig"
+  }
+ },
+ "region_detail": {
+  "North America": {
+   "drivers": "Boreal and temperate forests, regrowing after past clearing and fertilised by rising CO\u2082, give a steady sink, and net land-use losses are near zero. The sink is now being cut by fire: Canada's record 2023 fires and three straight high years \u2014 January\u2013September 2025 fire emissions of 0.3\u20130.4 GtC, 2.2\u00d7 the 2015\u20132024 average.",
+   "driver_source": "Friedlingstein et al. 2025, \u00a7\u00a73.8.2\u20133.8.3",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "SOIL",
+    "FIRE",
+    "LUC"
+   ],
+   "ecvs": [
+    "Land cover",
+    "Above-ground biomass",
+    "Fire",
+    "Fraction of absorbed photosynthetically active radiation (FAPAR)",
+    "Leaf area index",
+    "Soil moisture",
+    "Soil carbon",
+    "Land surface temperature"
+   ]
+  },
+  "South America": {
+   "drivers": "The Amazon is the largest tropical forest carbon store, but deforestation and degradation emit about 0.5 GtC/yr (bookkeeping), nearly cancelling the natural sink. Inversions see a small net source; DGVMs a small sink \u2014 the disagreement is the budget's largest regional uncertainty. The 2023\u201324 El Ni\u00f1o drought turned tropical lands into a source.",
+   "driver_source": "Friedlingstein et al. 2025, \u00a73.8.2",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "SOIL",
+    "FIRE",
+    "LUC"
+   ],
+   "ecvs": [
+    "Land cover",
+    "Above-ground biomass",
+    "Fire",
+    "Fraction of absorbed photosynthetically active radiation (FAPAR)",
+    "Soil moisture",
+    "Soil carbon",
+    "Land surface temperature",
+    "Evaporation from land"
+   ]
+  },
+  "Europe": {
+   "drivers": "Managed forests and farmland regrowth give a modest sink; inversions (0.3 GtC/yr) see more than DGVMs (0.1). Land-use emissions are near zero.",
+   "driver_source": "Friedlingstein et al. 2025, \u00a73.8.2",
+   "processes": [
+    "PHOTO",
+    "SOIL",
+    "LUC"
+   ],
+   "ecvs": [
+    "Land cover",
+    "Above-ground biomass",
+    "Fraction of absorbed photosynthetically active radiation (FAPAR)",
+    "Leaf area index",
+    "Soil carbon",
+    "Soil moisture"
+   ]
+  },
+  "Africa": {
+   "drivers": "Congo Basin forest and savannahs fix about 0.5 GtC/yr, but deforestation, shifting cultivation and fire emit about 0.4 GtC/yr \u2014 Africa contributes about half of global fire emissions. Inversions see a net source (\u22120.3); DGVMs a small sink (0.1).",
+   "driver_source": "Friedlingstein et al. 2025, \u00a7\u00a73.8.2\u20133.8.3",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "FIRE",
+    "LUC",
+    "SOIL"
+   ],
+   "ecvs": [
+    "Fire",
+    "Land cover",
+    "Above-ground biomass",
+    "Fraction of absorbed photosynthetically active radiation (FAPAR)",
+    "Soil moisture",
+    "Soil carbon",
+    "Evaporation from land"
+   ]
+  },
+  "Russia": {
+   "drivers": "Boreal forest and tundra: the largest inversion sink (0.6 GtC/yr) but DGVMs say 0.3 \u2014 the paper's north\u2013south conundrum in one region. Permafrost holds ~1,300 PgC beneath it; thaw is the long-term risk.",
+   "driver_source": "Friedlingstein et al. 2025, \u00a73.8.2",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "SOIL",
+    "PERMA",
+    "FIRE"
+   ],
+   "ecvs": [
+    "Permafrost",
+    "Snow",
+    "Land cover",
+    "Above-ground biomass",
+    "Fire",
+    "Soil carbon",
+    "Land surface temperature",
+    "Soil moisture"
+   ]
+  },
+  "West Asia": {
+   "drivers": "Arid and semi-arid lands: small fluxes, near-neutral. Water, not carbon, is the limiting factor \u2014 irrigation and groundwater set what grows.",
+   "driver_source": "Friedlingstein et al. 2025, Fig. 15",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "SOIL"
+   ],
+   "ecvs": [
+    "Soil moisture",
+    "Groundwater",
+    "Evaporation from land",
+    "Land cover",
+    "Anthropogenic water use"
+   ]
+  },
+  "Southeast Asia": {
+   "drivers": "Peat swamp forests store huge carbon per hectare; draining and burning them emits 0.4 GtC/yr (bookkeeping) \u2014 twice what DGVMs simulate, which the paper flags as a likely DGVM underestimate. Net: about neutral by DGVMs, a source by inversions.",
+   "driver_source": "Friedlingstein et al. 2025, \u00a73.8.2",
+   "processes": [
+    "PHOTO",
+    "LUC",
+    "FIRE",
+    "SOIL"
+   ],
+   "ecvs": [
+    "Land cover",
+    "Fire",
+    "Soil carbon",
+    "Soil moisture",
+    "Above-ground biomass",
+    "Fraction of absorbed photosynthetically active radiation (FAPAR)"
+   ]
+  },
+  "East Asia": {
+   "drivers": "Regrowing forests \u2014 above all China's afforestation \u2014 plus intensive cropland give a 0.2 GtC/yr sink that both methods agree on. Land-use emissions are near zero.",
+   "driver_source": "Friedlingstein et al. 2025, \u00a73.8.2",
+   "processes": [
+    "PHOTO",
+    "SOIL",
+    "LUC"
+   ],
+   "ecvs": [
+    "Land cover",
+    "Above-ground biomass",
+    "Fraction of absorbed photosynthetically active radiation (FAPAR)",
+    "Leaf area index",
+    "Soil carbon",
+    "Soil moisture"
+   ]
+  },
+  "South Asia": {
+   "drivers": "Monsoon-fed croplands and forests: a small sink (about 0.0\u20130.2 GtC/yr), strongly tied to monsoon rain and irrigation.",
+   "driver_source": "Friedlingstein et al. 2025, Fig. 15",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "SOIL"
+   ],
+   "ecvs": [
+    "Soil moisture",
+    "River discharge",
+    "Groundwater",
+    "Evaporation from land",
+    "Land cover",
+    "Anthropogenic water use"
+   ]
+  },
+  "Australasia": {
+   "drivers": "Arid interior and savannahs: a small, wildly variable sink \u2014 wet years store carbon, drought and fire years release it. ENSO sets the rhythm.",
+   "driver_source": "Friedlingstein et al. 2025, Fig. 15",
+   "processes": [
+    "PHOTO",
+    "RESP",
+    "FIRE",
+    "SOIL"
+   ],
+   "ecvs": [
+    "Soil moisture",
+    "Fire",
+    "Land cover",
+    "Evaporation from land",
+    "Terrestrial water storage",
+    "Land surface temperature"
+   ]
+  }
+ },
+ "ecvs": [
+  {
+   "name": "Groundwater",
+   "group": "Hydrology",
+   "role": "Water stored below ground sustains dry-season growth and sets drought resilience."
+  },
+  {
+   "name": "Lakes",
+   "group": "Hydrology",
+   "role": "Lake area and level track water storage; lakes bury carbon in sediments."
+  },
+  {
+   "name": "River discharge",
+   "group": "Hydrology",
+   "role": "Rivers carry land carbon to the sea \u2014 the GCB's river-outgassing adjustment is 0.65 GtC/yr."
+  },
+  {
+   "name": "Terrestrial water storage",
+   "group": "Hydrology",
+   "role": "GRACE-measured water storage; land-flux anomalies track it (Ciais et al. 2026)."
+  },
+  {
+   "name": "Evaporation from land",
+   "group": "Hydrology",
+   "role": "The water flux that accompanies photosynthesis; drought cuts both together."
+  },
+  {
+   "name": "Soil moisture",
+   "group": "Hydrology",
+   "role": "Controls photosynthesis, respiration and fire risk \u2014 the master switch on the sink's year-to-year swings."
+  },
+  {
+   "name": "Glaciers",
+   "group": "Cryosphere",
+   "role": "Meltwater and newly exposed land; a small direct carbon role, a large climate signal."
+  },
+  {
+   "name": "Ice sheets and ice shelves",
+   "group": "Cryosphere",
+   "role": "Not a carbon flux itself; their melt sets sea level and the long-term climate the sink lives in."
+  },
+  {
+   "name": "Permafrost",
+   "group": "Cryosphere",
+   "role": "Thaw releases the ~1,300 PgC stored in permafrost-region soils as CO\u2082 and CH\u2084."
+  },
+  {
+   "name": "Snow",
+   "group": "Cryosphere",
+   "role": "Insulates soil, sets the spring thaw and the start of the growing season."
+  },
+  {
+   "name": "Above-ground biomass",
+   "group": "Biology",
+   "role": "The living carbon stock (~550 GtC in vegetation); its change is the sink."
+  },
+  {
+   "name": "Albedo",
+   "group": "Biology",
+   "role": "How much sunlight land reflects; darkening warms and brightening cools \u2014 a feedback on the sink."
+  },
+  {
+   "name": "Fire",
+   "group": "Biology",
+   "role": "Satellite fire counts and burned area give fire emissions, about 2 GtC/yr."
+  },
+  {
+   "name": "Fraction of absorbed photosynthetically active radiation (FAPAR)",
+   "group": "Biology",
+   "role": "The fraction of sunlight plants absorb \u2014 the direct satellite measure of photosynthesis at work."
+  },
+  {
+   "name": "Land cover",
+   "group": "Biology",
+   "role": "What grows where; deforestation and regrowth show up here first."
+  },
+  {
+   "name": "Land surface temperature",
+   "group": "Biology",
+   "role": "Heat stress cuts photosynthesis and raises respiration."
+  },
+  {
+   "name": "Leaf area index",
+   "group": "Biology",
+   "role": "Leaf area per ground area; sets how much light the canopy can catch."
+  },
+  {
+   "name": "Soil carbon",
+   "group": "Biology",
+   "role": "The stock itself (~1,500 GtC in the top metre) and its change."
+  },
+  {
+   "name": "Anthropogenic greenhouse gas emissions",
+   "group": "Human use",
+   "role": "Fossil + land-use emissions \u2014 the denominator the sink is measured against."
+  },
+  {
+   "name": "Anthropogenic water use",
+   "group": "Human use",
+   "role": "Irrigation and extraction change soil moisture, growth and river flow."
+  }
+ ],
+ "processes": [
+  {
+   "abbr": "PHOTO",
+   "name": "Photosynthesis \u2014 gross primary production",
+   "role": "Plants fix about 123 \u00b1 8 PgC/yr from the air (Beer et al. 2010) \u2014 the largest carbon flux on Earth, roughly ten times fossil-fuel emissions. Tropical forests and savannahs do 60% of it. Every tonne in the land sink entered through this door.",
+   "source": "Beer et al. 2010, Science 329, 834\u2013838"
+  },
+  {
+   "abbr": "RESP",
+   "name": "Plant & soil respiration",
+   "role": "Nearly all of GPP returns to the air as CO\u2082. Soils alone breathe out 98 \u00b1 12 PgC/yr (Bond-Lamberty & Thomson 2010), rising about 0.1 PgC/yr as the planet warms, with a temperature sensitivity (Q10) of about 1.5. The sink is what photosynthesis keeps ahead of respiration.",
+   "source": "Bond-Lamberty & Thomson 2010, Nature 464, 579\u2013582"
+  },
+  {
+   "abbr": "SOIL",
+   "name": "Soil carbon storage",
+   "role": "Soils hold about 1,500 GtC of organic carbon in the top metre (Batjes 1996; Jobb\u00e1gy & Jackson 2000) \u2014 roughly twice the carbon in the air and three times the ~550 GtC in vegetation. Litter feeds it, microbes eat it; the balance is the slow store.",
+   "source": "Batjes 1996; Jobb\u00e1gy & Jackson 2000"
+  },
+  {
+   "abbr": "PERMA",
+   "name": "Permafrost carbon",
+   "role": "Permafrost-region soils hold about 1,300 PgC (range 1,100\u20131,500), some 800 PgC of it perennially frozen (Hugelius et al. 2014). Thaw releases it as CO\u2082 and CH\u2084 \u2014 about 18 GtC per degree of global warming (IPCC 2021). The DGVMs behind the land sink mostly do not simulate abrupt thaw.",
+   "source": "Hugelius et al. 2014, Biogeosciences 11, 6573\u20136593"
+  },
+  {
+   "abbr": "FIRE",
+   "name": "Fire disturbance",
+   "role": "Fire returns about 2 GtC/yr to the air in a typical recent year (GFED4.1s). 2023\u20132024 ran hot \u2014 1.7\u20132.2 GtC in January\u2013September alone, driven by Canada's record fires \u2014 while Africa contributes about half of global fire emissions (GCB 2025 \u00a73.8.3).",
+   "source": "van der Werf et al. 2017 (GFED4.1s); GCB 2025 \u00a73.8.3"
+  },
+  {
+   "abbr": "LUC",
+   "name": "Land-use change",
+   "role": "Clearing forest and draining peat emits 1.25 GtC/yr (2024, GCB 2025), and regrowth on abandoned land takes some back. It is the only process humans directly control, and the largest uncertainty in the budget (\u00b10.7 GtC/yr).",
+   "source": "Friedlingstein et al. 2025 (GCB 2025)"
+  },
+  {
+   "abbr": "BALANCE",
+   "name": "The small difference of huge fluxes",
+   "role": "GPP (~123 PgC/yr) minus respiration and fire leaves a net sink of about 2 GtC/yr \u2014 roughly 2% of what photosynthesis fixes. That is why the land sink swings by \u00b11 GtC from year to year with drought and El Ni\u00f1o, why its uncertainty (\u00b10.5\u20131.1 GtC/yr) is large next to its size, and why climate change \u2014 which cut the 2015\u20132024 sink by 25% (GCB 2025) \u2014 matters so much. Warming raises respiration (Q10 \u2248 1.5) and fire, while rising CO\u2082 fertilises photosynthesis; the balance is what the annual series measures.",
+   "source": "Friedlingstein et al. 2025 (GCB 2025)"
+  }
+ ],
+ "region_reconciliation": {
+  "dgvm_net_sum_gtc": 1.3,
+  "inv_net_sum_gtc": 1.25,
+  "global_net_land_2015_2024_gtc": 0.99,
+  "note": "The ten regional DGVM net fluxes sum to 1.3 GtC/yr, above the global 2015-2024 mean net land flux (SLAND minus bookkeeping ELUC) of 0.99 GtC/yr. The gap is the DGVM underestimate of ELUC: in South America the bookkeeping models put ELUC at ~0.5 GtC/yr against ~0.3 in the DGVMs, and in Southeast Asia ~0.4 against ~0.2 (GCB 2025 Sect. 3.8.2). Regional shares are therefore not computed against a single total on this page."
+ }
+}
